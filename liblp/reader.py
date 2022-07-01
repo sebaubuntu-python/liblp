@@ -289,8 +289,9 @@ def ReadMetadata(super_partition: str, slot_number: int,
 		if metadata:
 			break
 
-	if not metadata or not AdjustMetadataForSlot(metadata, slot_number):
-		raise Exception('invalid metadata')
+	assert metadata, "Could not read metadata."
+
+	AdjustMetadataForSlot(metadata, slot_number)
 
 	return metadata
 
