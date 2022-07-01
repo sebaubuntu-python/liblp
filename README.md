@@ -16,7 +16,7 @@ pip3 install liblp
 
 ```sh
 # Launch lpunpack
-$ liblp
+$ lpunpack
 ```
 
 ## License
