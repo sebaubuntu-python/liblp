@@ -131,7 +131,7 @@ def ReadMetadataHeader(fd: BufferedIOBase) -> LpMetadataHeader:
     # field to 0. Note that we must only compute up to |header_size|.
 	temp = LpMetadataHeader.from_buffer_copy(bytes(header))
 	temp.header_checksum = (c_uint8*32)(0)
-	crc = sha256(bytes(temp)).digest()
+	crc = sha256(bytes(temp)[:header.header_size]).digest()
 	assert crc == bytes(header.header_checksum), \
 		"Logical partition metadata has invalid checksum."
 
