@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "liblp"
-version = "1.0.1"
+version = "1.0.2"
 description = "Android logical partitions library ported from C++ to Python"
 authors = ["Sebastiano Barezzi <barezzisebastiano@gmail.com>"]
 license = "Apache-2.0"
