@@ -5,7 +5,7 @@ description = "Android logical partitions library ported from C++ to Python"
 authors = ["Sebastiano Barezzi <barezzisebastiano@gmail.com>"]
 license = "Apache-2.0"
 readme = "README.md"
-repository = "https://github.com/SebaUbuntu/liblp"
+repository = "https://github.com/sebaubuntu-python/liblp"
 
 [tool.poetry.scripts]
 lpunpack = 'liblp.partition_tools.lpunpack:main'
