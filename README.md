@@ -1,6 +1,7 @@
 # liblp
 
 [![PyPi version](https://img.shields.io/pypi/v/liblp)](https://pypi.org/project/liblp/)
+[![Documentation Status](https://readthedocs.org/projects/liblp/badge/?version=latest)](https://liblp.readthedocs.io/en/latest/?badge=latest)
 
 Android logical partitions library ported from C++ to Python
 
@@ -18,6 +19,8 @@ pip3 install liblp
 # Launch lpunpack
 $ lpunpack
 ```
+
+Complete documentation at [Read the Docs](https://liblp.readthedocs.io)
 
 ## License
 
